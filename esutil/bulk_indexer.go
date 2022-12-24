@@ -146,9 +146,8 @@ type BulkIndexerResponseItem struct {
 			Type   string `json:"type"`
 			Reason string `json:"reason"`
 		} `json:"caused_by"`
-	} 
-	Get`json:"error,omitempty"`
-		Get struct {
+	} `json:"error,omitempty"`
+	Get struct {
 		SeqNo    int64           `json:"_seq_no"`
 		PrimTerm int64           `json:"_primary_term"`
 		Found    bool            `json:"found"`
